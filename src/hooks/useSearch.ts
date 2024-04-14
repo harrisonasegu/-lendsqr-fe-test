@@ -1,27 +1,27 @@
-// import { useCallback } from "react";
-// import { useAppDispatch } from "../store/hooks";
-// import { setAppKey } from "../store";
+import { useCallback } from "react";
+import { useAppDispatch } from "../store/hooks";
+import { setAppKey } from "../store";
 
-// interface SearchConfiguration {
-//   (value: string): void;
-// }
+interface SearchConfiguration {
+  (value: string): void;
+}
 
-// const useSearch = (): SearchConfiguration => {
-//   const dispatch = useAppDispatch();
+const useSearch = (): SearchConfiguration => {
+  const dispatch = useAppDispatch();
 
-//   const onSearch = useCallback(
-//     (value: string) => {
-//       dispatch(
-//         setAppKey({
-//           key: "searchTerm",
-//           value,
-//         })
-//       );
-//     },
-//     [dispatch]
-//   );
+  const onSearch = useCallback(
+    (value: string) => {
+      dispatch(
+        setAppKey({
+          key: "searchTerm",
+          value,
+        })
+      );
+    },
+    [dispatch]
+  );
 
-//   return onSearch;
-// };
+  return onSearch;
+};
 
-// export default useSearch;
+export default useSearch;
