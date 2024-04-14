@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "avenir-next-bold";
+  src: url("./assets/fonts/AvenirNextCyr-Bold.ttf");
+}
+@font-face {
+  font-family: "avenir-next-medium";
+  src: url("./assets/fonts/AvenirNextCyr-Medium.ttf");
+}
+@font-face {
+  font-family: "avenir-next-thin";
+  src: url("./assets/fonts/AvenirNextCyr-Thin.ttf");
+}
+@font-face {
+  font-family: "work-sans-semibold";
+  src: url("./assets/fonts/WorkSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "work-sans-thin";
+  src: url("./assets/fonts/WorkSans-Thin.ttf");
+}
+@font-face {
+  font-family: "work-sans-regular";
+  src: url("./assets/fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "work-sans-medium";
+  src: url("./assets/fonts/WorkSans-Medium.ttf");
+}
+.ant-menu {
+  padding: 0px !important;
+}
+
+.ant-menu-item-selected {
+  border-left: 3px solid #39cdcc;
+  border-radius: 0px !important;
+  opacity: 0.06px;
+  padding-left: 1.8rem !important;
+  padding-right: 0px !important;
+  margin-left: 0.5rem !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eef2f8;
+  display: none;
+}
+
+::-webkit-scrollbar-track:hover {
+  display: block;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #39CDCC;
+  border-radius: 12px;
+  display: block;
+}/*# sourceMappingURL=index.css.map */

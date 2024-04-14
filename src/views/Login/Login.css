@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "avenir-next-bold";
+  src: url("./assets/fonts/AvenirNextCyr-Bold.ttf");
+}
+@font-face {
+  font-family: "avenir-next-medium";
+  src: url("./assets/fonts/AvenirNextCyr-Medium.ttf");
+}
+@font-face {
+  font-family: "avenir-next-thin";
+  src: url("./assets/fonts/AvenirNextCyr-Thin.ttf");
+}
+@font-face {
+  font-family: "work-sans-semibold";
+  src: url("./assets/fonts/WorkSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "work-sans-thin";
+  src: url("./assets/fonts/WorkSans-Thin.ttf");
+}
+@font-face {
+  font-family: "work-sans-regular";
+  src: url("./assets/fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "work-sans-medium";
+  src: url("./assets/fonts/WorkSans-Medium.ttf");
+}
+.ant-menu {
+  padding: 0px !important;
+}
+
+.ant-menu-item-selected {
+  border-left: 3px solid #39cdcc;
+  border-radius: 0px !important;
+  opacity: 0.06px;
+  padding-left: 1.8rem !important;
+  padding-right: 0px !important;
+  margin-left: 0.5rem !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eef2f8;
+  display: none;
+}
+
+::-webkit-scrollbar-track:hover {
+  display: block;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #39CDCC;
+  border-radius: 12px;
+  display: block;
+}
+
+.antd-form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .antd-form {
+    display: block;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .antd-form .antd-form__row {
+    display: block;
+    margin: 4rem 0;
+    width: 100%;
+  }
+  .antd-form .antd-form__header__title {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .antd-form .antd-form__header__subtitle {
+    font-size: 1.25rem;
+  }
+}
+.antd-form__header__title {
+  font-family: "avenir-next-bold";
+  color: #213F7D;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.antd-form__header__subtitle {
+  font-family: "avenir-next-thin";
+  color: #545F7D;
+  font-size: 1rem;
+}
+.antd-form__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  height: 100%;
+}
+.antd-form__row__input {
+  border: 2px solid rgba(84, 95, 125, 0.1490196078);
+}
+.antd-form__row__btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #39CDCC;
+  letter-spacing: 2px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  font-family: "avenir-next-medium";
+}
+.antd-form__row__submit {
+  margin-top: 3rem;
+  height: 48px;
+}/*# sourceMappingURL=Login.css.map */
