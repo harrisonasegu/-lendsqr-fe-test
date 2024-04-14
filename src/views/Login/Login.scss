@@ -1,0 +1,73 @@
+@import "../../index";
+
+.antd-form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @include tablet {
+    display: block;
+    width: 100%;
+    height: fit-content;
+
+    .antd-form &__row {
+      display: block;
+      margin: 4rem 0;
+      width: 100%;
+    }
+
+    .antd-form &__header {
+        &__title {
+            font-size: 2.5rem;
+            text-align: left;
+        }
+        &__subtitle {
+            font-size: 1.25rem;
+        }
+    }
+  }
+
+  &__header {
+    &__title {
+      font-family: "avenir-next-bold";
+      color: $secondary-color;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &__subtitle {
+      font-family: "avenir-next-thin";
+      color: $tertiary-color;
+      font-size: 1rem;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    height: 100%;
+
+    &__input {
+      border: 2px solid #545f7d26;
+    }
+
+    &__btn {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: $primary-color;
+      letter-spacing: 2px;
+      width: fit-content;
+      font-weight: 600;
+      font-family: "avenir-next-medium";
+    }
+
+    &__submit {
+      margin-top: 3rem;
+      height: 48px;
+    }
+  }
+}

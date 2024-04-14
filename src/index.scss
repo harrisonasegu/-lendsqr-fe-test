@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+// COLORS
+$primary-color: #39CDCC;
+$secondary-color: #213F7D;
+$tertiary-color: #545F7D;
+$white: "#ffffff";
+
+@font-face {
+  font-family: "avenir-next-bold";
+  src: url("./assets/fonts/AvenirNextCyr-Bold.ttf");
+}
+@font-face {
+  font-family: "avenir-next-medium";
+  src: url("./assets/fonts/AvenirNextCyr-Medium.ttf");
+}
+@font-face {
+  font-family: "avenir-next-thin";
+  src: url("./assets/fonts/AvenirNextCyr-Thin.ttf");
+}
+@font-face {
+  font-family: "work-sans-semibold";
+  src: url("./assets/fonts/WorkSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "work-sans-thin";
+  src: url("./assets/fonts/WorkSans-Thin.ttf");
+}
+@font-face {
+  font-family: "work-sans-regular";
+  src: url("./assets/fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "work-sans-medium";
+  src: url("./assets/fonts/WorkSans-Medium.ttf");
+}
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 992px;
+$small-laptop-breakpoint: 1280px;
+$desktop-breakpoint: 1600px;
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin smallLaptop {
+  @media only screen and (min-width: #{$small-laptop-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (min-width: #{$mobile-breakpoint}) {
+    @content;
+  }
+}
+
+.ant-menu {
+  padding: 0px!important;
+}
+
+.ant-menu-item-selected {
+  border-left: 3px solid #39cdcc;
+  border-radius: 0px !important;
+  opacity: 0.06px;
+  padding-left: 1.8rem !important;
+  padding-right: 0px!important;
+  margin-left: .5rem!important;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eef2f8;
+  display: none;
+}
+
+::-webkit-scrollbar-track:hover {
+  display: block;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+  border-radius: 12px;
+  display: block;
+}

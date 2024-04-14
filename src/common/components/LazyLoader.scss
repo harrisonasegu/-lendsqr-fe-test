@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    place-content: center;
+    height: 100vh; /* assuming that '100svh' was a typo and you meant '100vh' */
+  }
+  
+  .loader {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .loading-text {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.125rem; /* 18px assuming the base font size is 16px */
+    margin-top: 1.25rem; /* 20px assuming the base spacing unit is 16px */
+  }

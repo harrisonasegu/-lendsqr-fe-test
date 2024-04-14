@@ -1,0 +1,62 @@
+@import "../../../index";
+
+.auth-container {
+  height: 100svh;
+
+  @include tablet {
+    height: 100svh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .auth-container &__left {
+      display: grid;
+      position: relative;
+    }
+
+    .auth-container &__right {
+      padding: 0 5rem;
+      box-shadow: 0px 15px 90px 0px #00000008;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &__mobile-logo {
+        display: none;
+    }
+    }
+    
+  }
+
+  &__left {
+    padding: 4rem;
+    position: relative;
+    display: none;
+  }
+  &__right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    &__mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+  }
+}
+
+
+.loginImg {
+  animation: loginImg 2s linear infinite alternate;
+}
+
+@keyframes loginImg {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
